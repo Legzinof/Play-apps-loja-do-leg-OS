@@ -1,0 +1,206 @@
+print("                                        ")
+      print("                                        ")
+      print("                                        ")
+      print("________________________________________")
+      print("                \033[1;36;49mplay apps.\033[0;39;49m             ")  
+      print("________________________________________")
+      print("            sua loja digital")
+      lojacon=1
+      while lojacon <=2:
+         print("1-atualizações")
+         print("2-apps")
+         print("3-jogos")
+         print("4-assinaturas")
+         print("5-mais legcoins")
+         print("6-sair")
+         loja1=int(input("digite o número do lugar que você quer entrar:"))
+         if loja1==6:
+           break
+         elif loja1==5:
+           print("                                        ")
+           print("                                        ")
+           legper=int(input("quanto é 50×9+20-30+6+20-6+30:"))    
+           if legper==450:
+               print("                                        ")
+               print("                                        ")
+               print("você ganhou 500 legcoins")
+               print("                                        ")
+               print("                                        ")
+               legcoins = atualizar_legcoins(legcoins, 500, "+")
+               print(f"Seu novo saldo é: {legcoins} legcoins")
+           else:
+               print("                                        ")
+               print("                                        ")
+               print("errou e perdeu 100 legcoins")
+               print("                                        ")
+               print("                                        ")
+               legcoins = atualizar_legcoins(legcoins, 100, "")
+               print(f"Seu novo saldo é: {legcoins} legcoins")
+         elif loja1==1:
+           print("                                        ")
+           print("                                        ")
+           print("1-atualizações dos aplicativos")
+           print("2-atualização do play apps")
+           print ("3-atualização do sistema leg OS")
+           loja2=int(input("digite o número do lugar que você quer entrar:"))
+           if loja2==1:
+            print("                                        ")
+            print("                                        ")
+            print("nenhum atualização encontrada")
+           elif loja2==2:
+             print("                                        ")
+             print("                                        ")
+             print("nenhum atualização encontrada")
+           elif loja2==3:       
+             print("                                        ")
+             print("                                        ")
+             print("nenhum atualização do sistema encontrada")
+           else :
+             print("                                        ")
+             print("                                        ")
+             print("desculpe ocorreu um erro")
+         elif loja1==2:  
+             apps1=1
+             while apps1<=2: 
+               print("                                        ")
+               print("                                        ")
+               print ("1-hot space")
+               print("2-sair")
+               apps2=int(input("digite o número do lugar que você quer entrar:"))
+               if apps2==2:
+                 break
+               elif apps2==1:  
+                 print("                                        ")
+                 print("                                        ")
+                 print ("hot space")
+                 print("uma rede social exclusiva do leg OS ")
+                 print("                                        ")
+                 hotdow=input("instalar hot space (s/n)")
+                 #colocar uma função para comprar o hot space por 300 legcoins na versão 1.3
+                 if hotdow=="s":
+                     print("                                        ")
+                     print("                                        ")
+                     print("instalando...")
+                     print("                                        ")
+                     print("                                        ")
+                     print("abrindo...")
+                     print("                                        ")
+                     print("                                        ")
+                     print("                                        ")
+                     print("                                        ")
+                     print("               \033[1;34;49mhot space\033[0;39;49m    ")
+                     nhot1=1
+                     print("         _____________________")
+                     print("         sua nova rede social ")
+                     print("                                        ")
+                     print("                                        ")
+                     print("                                        ")
+                     print("                                        ")
+                     print("vamos te cadastrar")
+                     print("                                        ")
+                     hotnome=input("digite seu nome:")
+                     hotNick=input("digite seu Nick:")
+                     hotsenha=input("digite sua senha:")
+                     #hotid=input("digite o id do seu leg OS:") usar quando tiver o import randon para o id
+                     while nhot1<=2:
+                         print("                                        ")
+                         print("                                        ")
+                         print("                                        ")
+                         print("                                        ")
+                         print("1-videos")
+                         print("2-mensagens")
+                         print("3-conta")
+                         print("4-loja hot")
+                         print("5-servidores")
+                         print("6-sair")
+                         perhot=int(input("digite o número do local que você quer entrar:"))
+                         if perhot==6:
+                           break
+                         elif perhot==3:
+                             print(".               ")
+                             print(".               ")
+                             print("seu nome é {}".format(hotnome))
+                             print("seu nick é {}".format(hotnick))
+                             print("sea senha é {}".format(hotsenha))
+                         elif perhot==4:
+                             print(".               ")
+                             print(".               ")
+                             print("desculpe ainda não temos produtos disponíveis ")
+                               
+                         elif perhot==1:
+                           print("ainda não temos vídeos")
+                         elif perhot==2:
+                           print("você não tem novas mensagens ")
+                         elif perhot==5:  
+                           print("procurando servidor")
+                           print(".               ")
+                           print(".               ")
+                           
+
+                           import socket
+
+
+                           porta = 8000
+
+                           sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                           try:
+                             sock.connect(('', porta))
+                           except ConnectionRefusedError:
+                             print("Falha ao conectar ao servidor")
+                             exit()
+
+
+                           msg = input("Digite sua mensagem: ")
+                           sock.send(msg.encode('utf-8'))
+
+
+                           data = sock.recv(1024)
+                           if not data:
+                             print("Servidor desconectado")
+                             exit()
+
+                           print(f"Resposta do servidor: {data.decode('utf-8')}")
+
+
+                           sock.close()
+
+                 elif hotdow=="n":
+                     print("saindo")
+                     print("a compra não foi realizada")
+                     print("                                        ")
+                     print("                                        ")
+                 else:
+                     print("ocorreu um erro")   
+                     print("                                        ")
+                     print("                                        ")
+                     
+                
+         elif loja1==3:   
+             print ("ainda não temos jogos disponíveis ")    
+         elif loja1==4: 
+             asscom=1
+             while asscom<=2:  
+               print("                                        ")
+               print("                                        ")
+               print("1-comprar assinatura play pro")
+               print("2-sair")
+               assper=int(input("digite o número do lugar que você quer entrar:"))
+               if assper==2:
+                 print("saindo...")
+                 break
+               elif assper==1:
+                   print("para comprar o play pro terá que pagar 500 legcoins")
+                   print("sua vantagen sera símbolo pro no nome ")
+                   print(".  ")
+                   print("1-comprar")
+                   print("2-sair")
+                   assper1=int(input("digite o número do lugar que você quer entrar:"))
+                   if assper1== 1:
+                       print("comprando")
+                       legcoins = atualizar_legcoins(legcoins, 500, "")
+                       print(f"Seu novo saldo é: {legcoins} legcoins")
+                       usuário," pro"
+                   else:
+                       print("saindo...")    
+                   
+  
